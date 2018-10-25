@@ -1,0 +1,37 @@
+{
+  conversations: {
+    1: {
+          id: 1
+          dialog: "Hello,  RedBeard.  \nI  know  things  must  be  confusing  to  you.  \nYou  went  to  sleep  in  your  bed,  and  woke  up  here.  \nThe  truth  is  that  we  need  your  help  to  defeat \nDARGON  the  DRAGON.  \n\n\nWill  you  come  to  our  Aid?"
+    }
+    2:{
+        id: 2
+        dialog: "That  is  wonderful  news.  Maybe  this  might  help  in  your  journey.  \n\nThe  SWORD  can  be  used  by  DOUBLE-TAPPING  the  desired  direction  of  attack.\nPotions  can  be  used  when  your  health  is  low  by  TAPPING  on  the  -STATS- HUD.\n \nThere  are  other  weapons  that  may  help  you  more  in  your  journey."
+    }
+
+    3:{
+        id: 3
+        dialog: "Unfortunately, \nI  am  all  out  of  magic  bringing  you  here.  \nThe  only  way  to  get  you  back  home  was  by  defeating  Dargon.  \nYou  will  just  have  to  live  out  the  rest  of  your  days  in  misery\n like  the  rest  of  us."
+    }
+  }
+  associatedChoices:{
+    1: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 1
+        destinationId: 2
+        choicePhrase: Yes
+        conversationCommandEvent: ACCEPT_QUEST
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 1
+        destinationId: 3
+        choicePhrase: No
+        conversationCommandEvent: DENY_QUEST
+      }
+
+    ]
+  }
+  currentConversationId: 1
+}

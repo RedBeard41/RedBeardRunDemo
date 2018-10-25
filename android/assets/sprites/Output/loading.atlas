@@ -1,0 +1,48 @@
+
+loading.png
+size: 2048,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+RedBeard Run title
+  rotate: false
+  xy: 2, 260
+  size: 1436, 156
+  orig: 1436, 156
+  offset: 0, 0
+  index: -1
+RedBeardRight
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: 1
+RedBeardRight
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: 3
+RedBeardRight
+  rotate: false
+  xy: 260, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: 2
+RedBeardRight
+  rotate: false
+  xy: 518, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: 4
+dash
+  rotate: false
+  xy: 1440, 412
+  size: 16, 4
+  orig: 16, 4
+  offset: 0, 0
+  index: -1

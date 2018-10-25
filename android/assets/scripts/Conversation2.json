@@ -1,0 +1,105 @@
+{
+  conversations: {
+    1: {
+          id: 1
+          dialog: "Hello,  RedBeard. \nI  have  a  couple  of  items  for  your  journey.  \nWould  you  like  to  have  one  for  a  donation  of  course? \n\n I  am  a  non-profit!"
+    }
+    2:{
+        id: 2
+        dialog: "I  have:\n\n  a  POTION  for  30  DRAGOONS, \n a  BOW  for  300  DRAGOONS."
+    }
+
+    3:{
+        id: 3
+        dialog: "This  isn't  a  charity. \n Shove  off!"
+    }
+    4:{
+      id: 4
+      dialog: "That  is  a  wise  choice  the  POTION  will  heal  half  your  HEALTH.  \n\nPotions  can  be  used  when  your  health  is  low  by  TAPPING  on  the  -STATS- HUD.\n\nFor  the  night  is  dark  and  full  of  terrors. \n\nDo  you  need  anything  else?"
+    }
+    5:{
+      id: 5
+      dialog: "You  are  very  cunning, \nKatniss  Everde....Sorry,  wrong  game.  \nMay  the  odds  be  ever  in  your  favor. \n\n\nTo  use  the  BOW:\nSWIPE  the  DIRECTION  you  want  the  arrows  to  go\n\n Do  you  need  anything  else?"
+    }
+
+
+  }
+  associatedChoices:{
+    1: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 1
+        destinationId: 2
+        choicePhrase: Yes
+        conversationCommandEvent: NONE
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 1
+        destinationId: 3
+        choicePhrase: No
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+
+    ]
+    2: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 2
+        destinationId: 4
+        choicePhrase: Potion
+        conversationCommandEvent: BOUGHT_POTION
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 2
+        destinationId: 5
+        choicePhrase: Bow
+        conversationCommandEvent: BOUGHT_BOW
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 2
+        destinationId: 3
+        choicePhrase: Neither
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+
+    ]
+    4: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 4
+        destinationId: 2
+        choicePhrase: Yes
+        conversationCommandEvent: NONE
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 4
+        destinationId: 3
+        choicePhrase: No
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+
+    ]
+    5: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 5
+        destinationId: 2
+        choicePhrase: Yes
+        conversationCommandEvent: NONE
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 5
+        destinationId: 3
+        choicePhrase: No
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+
+    ]
+  }
+  currentConversationId: 1
+}

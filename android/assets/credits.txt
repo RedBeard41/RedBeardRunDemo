@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Credits for RedBeard Run(V4.0 02SEP2018)
+
+Game Design
+Gabriel Walters
+
+Programming
+Gabriel Walters
+
+Producer
+Gabriel Walters
+
+Sound
+Gabriel Walters
+
+Art Design
+Gabriel Walters
+
+Sprite Animation
+Gabriel Walters
+
+Map Creation
+Gabriel Walters
+
+Attributions
+
+LibGdx - Frameworks Library
+Https://libgdx.badlogicgames.com
+LibGdx is licensed under the Apache 2 License - free to use for commercial and non-commercial projects
+
+Tiled Map Editor 
+Mapeditor.org
+No license for created maps using software
+
+Gimp - Tileset and character creation
+www.gimp.org
+GNU General Public License
+
+Game Design Patterns - Entity Component and messaging
+Nystrom, R. (2014). Game programming patterns. S. l.: Genever Benning.
+And
+Hoey, P. (2015). Mastering LibGDX Game Development. Retrieved March 05, 2018.
+
+Sound Generation and Creation - Used for creating retro sound effects
+Bfxr
+bfxr.net
+No License for creating sounds and using them in projects
+
+

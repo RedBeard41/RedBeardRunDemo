@@ -1,0 +1,78 @@
+{
+  conversations: {
+    1: {
+          id: 1
+          dialog: "Hello,  Stranger. \nI'm  a  viking....\n\nJust  kidding.  \nI  am  a  collector  of  DRAGOONS.  \nHave  you  any  that  your  are  willing  to  part  with? \n \nI  have  some  things  to  trade  for  them."
+    }
+    2:{
+        id: 2
+        dialog: "Meow,  that  is  great.  \n30  DRAGOONS  for  a  POTION,  \nright  meow!"
+    }
+
+    3:{
+        id: 3
+        dialog: "Go  boil  your  bottoms  \nunder  a  silly  person  you  English  Kagniggit.  \n\n\nThat  is  'KNIGHT'  sounded  out  \nif  you  didn't  get  my  amazing  joke, \nMary  Poppins!"
+    }
+    4:{
+      id: 4
+      dialog: "A POTION  will  heal  half  your  HEALTH.  \n\nPotions  can  be  used  when  your  health  is  low  by  TAPPING  on  the  -STATS- HUD.\n\nDo  you  need  anything  else?"
+    }
+
+
+
+  }
+  associatedChoices:{
+    1: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 1
+        destinationId: 2
+        choicePhrase: Yes
+        conversationCommandEvent: NONE
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 1
+        destinationId: 3
+        choicePhrase: No
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+
+    ]
+    2: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 2
+        destinationId: 4
+        choicePhrase: I have some to spare
+        conversationCommandEvent: BOUGHT_POTION
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 2
+        destinationId: 3
+        choicePhrase: Get your own
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+
+    ]
+    4: [
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 4
+        destinationId: 2
+        choicePhrase: Yes
+        conversationCommandEvent: NONE
+      }
+      {
+        class: Conversation.ConversationChoice
+        sourceId: 4
+        destinationId: 3
+        choicePhrase: No
+        conversationCommandEvent: EXIT_CONVERSATION
+      }
+    ]
+
+  }
+  currentConversationId: 1
+}

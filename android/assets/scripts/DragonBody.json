@@ -1,0 +1,38 @@
+{
+  BodyDef : {
+    fixedRotation: true,
+    type: DynamicBody,
+    gravityScale: 0,
+    bullet: false
+
+  },
+  Fixtures : [
+
+
+    {
+      description: Head,
+      isSensor: false,
+      bitShifts: 4,
+      type: CircleShape,
+      radius: 8f,
+      density: 10,
+      friction: 1,
+      restitution: 0,
+      x: -20,
+      y: 16
+    }
+    {
+      description: Body,
+      isSensor: false,
+      bitShifts: 4,
+      type: CircleShape,
+      radius: 16,
+      density: 10,
+      friction: 1,
+      restitution: 0,
+      x: 0,
+      y: 0
+    }
+
+  ]
+}
